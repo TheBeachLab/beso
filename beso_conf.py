@@ -2,12 +2,12 @@
 
 # BASIC INPUTS:
 
-path = "."  # path to the working directory where the initial file is located
+path = "./wiki_files/example_1/"  # path to the working directory where the initial file is located
 #path = "."  # example - in the current working directory
 #path = "~/tmp/beso/"  # Linux example
 #path = "D:\\tmp\\"  # Windows example
-path_calculix = "d:\\soft\\FreeCad\\FreeCAD_0.17.10993_x64_dev_win\\bin\\ccx"  # path to the CalculiX solver
-#path_calculix = "/usr/bin/ccx"  # Linux example, may help shell command: which ccx
+#path_calculix = "d:\\soft\\FreeCad\\FreeCAD_0.17.10993_x64_dev_win\\bin\\ccx"  # path to the CalculiX solver
+path_calculix = "/usr/bin/ccx"  # Linux example, may help shell command: which ccx
 #path_calculix = "d:\\soft\FreeCad\\FreeCAD_0.17.8264_x64_dev_win\\bin\\ccx"  # Windows example
 
 file_name = "Plane_Mesh.inp"  # file with prepared linear static analysis

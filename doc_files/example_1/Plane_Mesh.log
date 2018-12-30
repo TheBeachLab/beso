@@ -1,0 +1,99 @@
+
+---------------------------------------------------
+file_name = Plane_Mesh.inp
+Start at    Mon Dec  3 23:49:20 2018
+
+elset_name              = SolidMaterialElementGeometry2D
+domain_optimized        = True
+domain_density          = [1e-06, 1]
+domain_thickness        = [1.0, 1.0]
+domain_offset           = 0.0
+domain_orientation      = []
+domain_FI               = [[('stress_von_Mises', 450000000.0)], [('stress_von_Mises', 450.0)]]
+domain_material         = ['*ELASTIC \n210000e-6,  0.3', '*ELASTIC \n210000,  0.3']
+domain_same_state       = False
+
+mass_goal_ratio         = 0.4
+continue_from           = 
+filter_list             = [['simple', 2]]
+optimization_base       = stiffness
+cpu_cores               = 4
+FI_violated_tolerance   = 1
+decay_coefficient       = -0.2
+shells_as_composite     = False
+reference_points        = integration points
+reference_value         = max
+mass_addition_ratio     = 0.015
+mass_removal_ratio      = 0.03
+ratio_type              = relative
+compensate_state_filter = True
+sensitivity_averaging   = False
+steps_superposition     = []
+iterations_limit        = auto
+tolerance               = 0.001
+displacement_graph      = []
+save_iteration_results  = 1
+save_solver_files       = 
+save_resulting_format   = inp vtk
+
+
+ERROR: CalculiX input file ./wiki_files/example_1/Plane_Mesh.inp not found. Check your inputs.
+
+---------------------------------------------------
+file_name = Plane_Mesh.inp
+Start at    Mon Dec  3 23:50:17 2018
+
+elset_name              = SolidMaterialElementGeometry2D
+domain_optimized        = True
+domain_density          = [1e-06, 1]
+domain_thickness        = [1.0, 1.0]
+domain_offset           = 0.0
+domain_orientation      = []
+domain_FI               = [[('stress_von_Mises', 450000000.0)], [('stress_von_Mises', 450.0)]]
+domain_material         = ['*ELASTIC \n210000e-6,  0.3', '*ELASTIC \n210000,  0.3']
+domain_same_state       = False
+
+mass_goal_ratio         = 0.4
+continue_from           = 
+filter_list             = [['simple', 2]]
+optimization_base       = stiffness
+cpu_cores               = 4
+FI_violated_tolerance   = 1
+decay_coefficient       = -0.2
+shells_as_composite     = False
+reference_points        = integration points
+reference_value         = max
+mass_addition_ratio     = 0.015
+mass_removal_ratio      = 0.03
+ratio_type              = relative
+compensate_state_filter = True
+sensitivity_averaging   = False
+steps_superposition     = []
+iterations_limit        = auto
+tolerance               = 0.001
+displacement_graph      = []
+save_iteration_results  = 1
+save_solver_files       = 
+save_resulting_format   = inp vtk
+
+domains: 1
+nodes  : 3131
+TRIA3  : 0
+TRIA6  : 0
+QUAD4  : 3000
+QUAD8  : 0
+TETRA4 : 0
+TETRA10: 0
+HEXA8  : 0
+HEXA20 : 0
+PENTA6 : 0
+PENTA15: 0
+
+iterations_limit        = 86
+
+domain order: 
+0) SolidMaterialElementGeometry2D
+
+   i              mass FI_violated_0)          FI_mean    _without_state0         FI_max_0)
+
+ERROR: CalculiX result file not found, check your inputs
