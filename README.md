@@ -11,7 +11,8 @@ failure index / effective density
 where failure index equals actual stress divided by allowable stress.
 Switching to softer state (material) is stopped after achieving goal mass (thanks to decreasing effective densities or thicknesses). Another stop criterion can be element failure (failure index >= 1).
 
-Brief description of the algorithm was given in the conference paper which is available in [proceedings](http://www.engmech.cz/2017/im/doc/EM2017_proceedings_all.pdf) (pages 590-953):
+Brief description of the algorithm was given in the conference paper which is available [here](doc_files/EM2017_proceedings_all.pdf). Extracted from the original ENGINEERING MECHANICS 201
+7, 23rd INTERNATIONAL CONFERENCE [Book of full texts](http://www.engmech.cz/2017/im/doc/EM2017_proceedings_all.pdf) (pages 590-593):
 
 LÖFFELMANN, F. Failure Index Based Topology Optimization for Multiple Properties. In _Engineering Mechanics 2017_. 1. konference Engineering mechanics 2014, Svratka, ČR: Brno University of Technology, 2017. s. 590-593. ISBN: 978-80-214-5497-2. ISSN: 1805-8248.
 
