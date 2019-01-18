@@ -1,4 +1,12 @@
 # b.e.s.o.
+
+* [Topology optimization, BESO method](#topology-optimization-beso-method)
+* [Current implementation idea](#current-implementation-idea)
+* [Possibilities / limitations](#possibilities--limitations)
+* [Examples](#examples)
+  * [Example 1. Simply supported 2D Beam](#example-1-simply-supported-2d-beam)
+  * [Example 2. Engine bracket](#example-2-engine-bracket)
+
 Python code for a topology optimization method known as `b.e.s.o` bidirectional evolutionary structural optimization  using CalculiX FEM solver.
 
 ## Topology optimization, BESO method
@@ -20,9 +28,7 @@ LÖFFELMANN, F. Failure Index Based Topology Optimization for Multiple Propertie
 
 User prepares .inp input file in the same way as for a common static analysis, than in the beso_conf.py file sets input parameters, which consist of material inputs of solid sections (shell sections) and parameters for the optimization. The optimization program run in iterations. In each iteration it copies input file with rewritten properties of elements in the optimization domain. Properties for elements are taken from user defined list of allowable states. The program in each iteration switches the least used elements to lower state (softer) and it can also switch maximally used or overstressed elements to higher state (stronger). It iterates until given mass is achieved or limit of failing elements is achieved.
 
-
 For example lets have prescribed allowable states for 3 materials: "void", aluminium, and steel. Optimization starts with the highest state (all elements as steel). In each iteration sensitivity number is computed for all elements in prescribed domains. Sensitivity number (failure index divided by effective density) is heuristic measure how efficient given element is. Small portion of elements with the lowest sensitivity number are switched down by one state (e.g. from steel to aluminium), so mass decreases. Less elements with the highest sensitivity number (and failing elements) are switched up (e.g. from "void" to aluminium, or from aluminium to steel).
-
 
 ## Possibilities / limitations
 
@@ -45,4 +51,3 @@ Access the full worked example [here.](doc_files/example_1/example1.md)
 
 ### Example 2. Engine bracket
 Access the full worked example [here.](doc_files/example_2/example2.md)
-
